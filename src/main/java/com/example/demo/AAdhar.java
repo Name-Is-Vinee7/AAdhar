@@ -11,9 +11,9 @@ public class AAdhar {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long ID;
-	private String FirstName;
-	private String LastName;
-	private String AAdharNum;
+	private String firstName;
+	private String lastName;
+	private String aAdharNum;
 	
 	   public long getID() {
 	    	  return ID;
@@ -22,32 +22,32 @@ public class AAdhar {
 	    	  this.ID =ID;
 	      }
 	      
-	      public String getFirstName() {
-	    	  return FirstName;
+	      public String getfirstName() {
+	    	  return firstName;
 	      }
-	      public void setFirstName(String FirstName) {
-	    	  this.FirstName = FirstName;
-	      }
-	      
-	      public String getLastName() {
-	    	  return LastName;
-	      }
-	      public void setLastName(String LastName) {
-	    	  this.LastName = LastName;
+	      public void setFirstName(String firstName) {
+	    	  this.firstName = firstName;
 	      }
 	      
-	      public String getAAdharNum() {
-	    	  return AAdharNum;
+	      public String getlastName() {
+	    	  return lastName;
 	      }
-	      public void setAAdharNum(String AAdharNum) {
-	    	  this.AAdharNum = AAdharNum;
+	      public void setLastName(String lastName) {
+	    	  this.lastName = lastName;
 	      }
 	      
-	      public AAdhar(long ID,String FirstName,String LastName,String AAdharNum) {
+	      public String getaAdharNum() {
+	    	  return aAdharNum;
+	      }
+	      public void setAAdharNum(String aAdharNum) {
+	    	  this.aAdharNum = aAdharNum;
+	      }
+	      
+	      public AAdhar(long ID,String firstName,String lastName,String aAdharNum) {
 	    	  this.ID=ID;
-	    	  this.FirstName=FirstName;
-	    	  this.LastName=LastName;
-	    	  this.AAdharNum = AAdharNum;
+	    	  this.firstName=firstName;
+	    	  this.lastName=lastName;
+	    	  this.aAdharNum = aAdharNum;
 	      }
 	      
 	      public AAdhar() {
@@ -55,7 +55,7 @@ public class AAdhar {
 	      }
 	        
 	      public String toString() {
-	    	  return "AAdhar{"+"ID = "+ID+", FirstName= '"+FirstName+'\''+", LastName= '"+LastName+'\''+", AAdharNum= '"+AAdharNum+'\''+'}';
+	    	  return "AAdhar{"+"ID = "+ID+", FirstName= '"+firstName+'\''+", LastName= '"+lastName+'\''+", AAdharNum= '"+aAdharNum+'\''+'}';
 	      }
 	
 }
